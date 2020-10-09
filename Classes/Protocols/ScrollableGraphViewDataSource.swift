@@ -10,6 +10,6 @@ public protocol ScrollableGraphViewDataSource : class {
 }
 
 extension ScrollableGraphViewDataSource {
-    func plotLabel(shouldShowPlotLabel plot: Plot, atIndex pointIndex: Int) -> Bool { return false }
-    func plotLabel(forPlot plot: Plot, atIndex pointIndex: Int) -> String? { return nil }
+    public func plotLabel(shouldShowPlotLabel plot: Plot, atIndex pointIndex: Int) -> Bool { return false }
+    public func plotLabel(forPlot plot: Plot, atIndex pointIndex: Int) -> String? { return nil }
 }

@@ -113,7 +113,7 @@ open class Plot {
     }
     
     private func dequeue(animation: GraphPointAnimation) {
-        if let index = currentAnimations.index(of: animation) {
+        if let index = currentAnimations.firstIndex(of: animation) {
             currentAnimations.remove(at: index)
         }
         
